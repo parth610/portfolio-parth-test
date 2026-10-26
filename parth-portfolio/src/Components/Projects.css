@@ -1,0 +1,202 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 30px 15px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.projects-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #F2495A;
+}
+
+.projects-grp {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.project-card-container {
+    background-color: #73222a00;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.project-image-container {
+    width: 400px;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    /* border: 3px solid #73222A; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #73222A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-container:hover {
+    background-color: #F2495A;
+}
+
+.project-card-container:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.project-img {
+    width: 400px;
+    height: 300px;
+}
+
+.project-title {
+    text-decoration: none;
+    font-family: brother-1816, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.project-info {
+    text-decoration: none;
+    font-family: brother-1816, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #73222A;
+    padding: 5px;
+}
+
+.helperNotes-info-bg, .sharateit-info-bg, .flixtagram-info-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.331);
+    /* filter: blur(10px); */
+    /* -webkit-filter: blur(10px); */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.helper-notes-container, .sharateit-container, .flixtagram-container {
+    width: 80%;
+    background-color: white;
+    height: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 3; */
+
+}
+
+.helper-notes-cont-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.helper-notes-title, .sharateit-title, .flixtagram-title {
+    font-weight: 400;
+    font-size: 56px;
+    color: #73222A;
+    margin-bottom: 30px;
+}
+
+.helper-notes-image-container, .sharateit-image-container, .flixtagram-image-container {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.helper-notes-image, .flixtagram-image, .sharateit-image {
+    width: 100%;
+}
+
+.helpernotes-about-container, .sharateit-about-container, .flixtagram-about-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.helper-notes-link, .flixtagram-link, .sharateit-link {
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: #73222A;
+    color: white;
+    font-weight: 200;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.helper-notes-link:hover, .flixtagram-link:hover, .sharateit-link:hover {
+    background-color: #F2495A;
+}
+
+.helper-notes-about, .flixtagram-about, .sharateit-about {
+    color: #73222A;
+    font-size: 24px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+    .projects-container {
+        align-items: center;
+    }
+
+    .projects-grp {
+        max-width: 960px;
+    }
+
+    .project-image-container {
+        width: 300px;
+    }
+
+    .project-img {
+        width: 300px;
+        height: 225px;
+    }
+
+    .helper-notes-title, .sharateit-title, .flixtagram-title {
+        font-size: 40px;
+    }
+
+    .helper-notes-image-container, .sharateit-image-container, .flixtagram-image-container {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+  }
+
+  @media screen and (max-width:800px) {
+    .projects-grp {
+        flex-direction: column;
+
+    }
+    .project-card-container {
+        margin-bottom: 20px;
+    }
+
+    .helper-notes-image-container, .sharateit-image-container, .flixtagram-image-container {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+  }

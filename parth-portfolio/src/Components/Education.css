@@ -1,0 +1,133 @@
+.education-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1280px;
+    padding: 30px 0;
+}
+
+.education-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #F2495A;
+}
+
+.education-cards-grp {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.app-academy-card, .nmstate-card {
+    width: 400px;
+    background-color: #73222A;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+
+.aa-image-container, .nmstate-image-container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.aa-image, .nmstate-image {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.aa-info-card, .nmstate-info-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #73222A;
+}
+
+.aa_title, .nmstate_title {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.aa-major, .nmstate-major {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+}
+
+.aa-years, .nmstate-years {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+}
+
+.aa-about, .nmstate-about {
+    display: flex;
+    justify-content: center;
+    color: rgb(229, 229, 229);
+    font-weight: 200;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+    .education-container {
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .app-academy-card, .nmstate-card {
+        width: 300px;
+    }
+
+
+    .aa-image-container, .nmstate-image-container {
+        width: 200px;
+    }
+
+
+    .aa_title, .nmstate_title {
+        font-size: 24px;
+
+    }
+
+    .aa-major, .nmstate-major {
+
+        font-size: 16px;
+
+    }
+
+    .aa-years, .nmstate-years {
+        font-size: 16px;
+    }
+
+    .aa-about, .nmstate-about {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .education-cards-grp {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

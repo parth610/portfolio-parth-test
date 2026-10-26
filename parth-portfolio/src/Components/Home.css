@@ -1,0 +1,221 @@
+.home-container {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: brother-1816, sans-serif;
+    width: 100%;
+    height: fit-content;
+    max-width: 1280px;
+}
+
+.home-left-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.name-text {
+    font-size: 64px;
+    color: #F2495A;
+    font-weight: 700;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-2px);
+    line-height: 60px;
+}
+
+.name-text:hover {
+    cursor: pointer;
+}
+
+.headline-text {
+    font-size: 28px;
+    font-weight: 400;
+    color: #73222A;
+    margin-bottom: 20px;
+}
+
+.headline-text-info {
+    font-size: 24px;
+    font-weight: 200;
+    color: #73222A;
+    width: 500px;
+}
+
+.home-buttons-container {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.aboutme-button, .resume-button {
+    font-family: brother-1816, sans-serif;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    background-color: #73222A;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.resume-button:hover, .aboutme-button:hover {
+    background-color: #F2495A;
+    cursor: pointer;
+}
+
+.home-right-container {
+    display: flex;
+    justify-content: flex-end;
+    border: #73222A solid;
+    border-width: 0 0 0 2px;
+}
+
+.parth-photo-container {
+    width: 500px;
+    height: 500px;
+    background-size: 500px;
+    /* border: 5px solid #561A20; */
+    overflow: hidden;
+    /* border-radius: 250px; */
+    display: block;
+    /* background-image: url("../Images/brushstrokes.png"); */
+    mask-image: url("../Images/brushstrokes.png");
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: #73222A;
+    object-fit: cover;
+    color: transparent;
+    background-clip: content-box;
+}
+
+.parth-photo {
+    width: 100%;
+    transform: translateY(50px)
+    translateX(50px);
+}
+
+.aboutme-container {
+    max-width: 1280px;
+    padding: 0 15px;
+}
+
+.about-me-header {
+    font-size: 28px;
+    font-weight: 400;
+    color: #73222A;
+}
+
+.about-me-info {
+    font-size: 18px;
+    font-weight: 200;
+    color: #73222A;
+    margin-bottom: 20px;
+}
+
+.d-portfolio-header {
+    font-size: 18px;
+    font-weight: 200;
+    color: #73222A;
+    margin-bottom: 20px;
+}
+
+.d-portfolio-link {
+    background-color: #73222A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.d-portfolio-link:hover {
+    background-color: #F2495A;
+}
+
+
+@media screen and (max-width : 1280px) {
+
+    .home-left-container {
+        display: flex;
+        margin-left: 50px;
+    }
+
+    .name-text {
+        font-size: 48px;
+    }
+
+    .name-text:hover {
+        cursor: pointer;
+    }
+
+    .headline-text {
+        font-size: 20px;
+    }
+
+    .headline-text-info {
+        font-size: 18px;
+        font-weight: 200;
+        color: #73222A;
+        width: 300px;
+    }
+
+    .home-buttons-container {
+        margin-top: 30px;
+        display: flex;
+
+    }
+
+    .aboutme-button, .resume-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .home-right-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .parth-photo-container {
+        width: 400px;
+        height: 400px;
+        background-size: 500px;
+    }
+
+    .parth-photo {
+        width: 100%;
+        transform: translateY(50px)
+        translateX(20px);
+    }
+
+    .aboutme-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-right-container {
+        display: none;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .aboutme-container {
+        margin-top: 15px;
+    }
+}
